@@ -1,24 +1,29 @@
 import { StyleSheet, Text, View, TouchableOpacity } from "react-native";
 import React from "react";
-import { AntDesign, Feather } from "@expo/vector-icons";
+import { AntDesign, MaterialIcons, FontAwesome } from "@expo/vector-icons";
 
 const TabBar = ({ state, descriptors, navigation }) => {
   const icons = {
     index: (props) => (
       <AntDesign name="home" size={26} color={greyColor} {...props} />
     ),
-    explore: (props) => (
-      <Feather name="compass" size={26} color={greyColor} {...props} />
+    favori: (props) => (
+      <MaterialIcons
+        name="favorite-border"
+        size={26}
+        color={greyColor}
+        {...props}
+      />
     ),
-    create: (props) => (
-      <AntDesign name="pluscircleo" size={26} color={greyColor} {...props} />
+    cart: (props) => (
+      <FontAwesome name="opencart" size={26} color={greyColor} {...props} />
     ),
     profil: (props) => (
       <AntDesign name="user" size={26} color={greyColor} {...props} />
     ),
   };
 
-  const primaryColor = "#0891b2";
+  const primaryColor = "#FECE00";
   const greyColor = "#737373";
   return (
     <View style={styles.tabbar}>
@@ -88,7 +93,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
-    backgroundColor: "white",
+    backgroundColor: "#262627",
     marginHorizontal: 20,
     paddingVertical: 15,
     borderRadius: 25,
