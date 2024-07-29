@@ -1,6 +1,6 @@
 import { StyleSheet, Text, View } from "react-native";
 import React from "react";
-import Carousel, { ParallaxImage } from "react-native-snap-carousel";
+import Carousel, { ParallaxImage } from "@demfabris/react-native-snap-carousel";
 import { silderImage } from "../constents/index";
 import {
   widthPercentageToDP as wp,
@@ -24,9 +24,9 @@ const ImageSlider = () => {
   );
 };
 
-const ItemCard = ({ item, index }, ParallaxImage) => {
+const ItemCard = ({ item, index }, parallaxProps) => {
   return (
-    <View style={{ width: wp(100) - 70, height: hp(25) }}>
+    <View style={{ width: wp(100) - 70, height: hp(20) }}>
       <ParallaxImage
         source={item}
         containerStyle={{ borderRadius: 30, flex: 1 }}
