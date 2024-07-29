@@ -14,7 +14,9 @@ const Home = () => {
       <View style={styles.containerSearch}>
         <Text style={styles.searchTitle}>Search ...</Text>
       </View>
-      <ImageSlider />
+      <View>
+        <ImageSlider />
+      </View>
     </View>
   );
 };
