@@ -2,7 +2,8 @@ import { StyleSheet, Text, View } from "react-native";
 import React from "react";
 import { Entypo, Ionicons } from "@expo/vector-icons";
 import ImageSlider from "../components/imageSlider";
-
+import ListeShoes from "../components/listShoes";
+import { Data } from "../constents/Data";
 const Home = () => {
   return (
     <View style={styles.container}>
@@ -14,9 +15,10 @@ const Home = () => {
       <View style={styles.containerSearch}>
         <Text style={styles.searchTitle}>Search ...</Text>
       </View>
-      <View>
+      <View style={{ paddingVertical: 20 }}>
         <ImageSlider />
       </View>
+      <ListeShoes Data={Data} />
     </View>
   );
 };
@@ -26,7 +28,7 @@ export default Home;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#040404",
+    // backgroundColor: "#040404",
     paddingTop: 30,
   },
   containerHeader: {

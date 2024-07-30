@@ -2,9 +2,10 @@ export const Data = [
   {
     Id: "03f04915-cc6f-4668-b9c8-42ec8399a847",
     Name: "jordan one",
-    Photo: require("../assets/imageData/image1.png"),
+    Photo: require("../assets/imageData/image9.png"),
     price: 99.99,
     selected: false,
+    star: 3.9,
     description:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae, consequatur dolor sequi provident possimus sed ad qui ipsum similique odio iste molestias praesentium nemo ut facere, consectetur error in voluptate!",
   },
@@ -14,6 +15,7 @@ export const Data = [
     Photo: require("../assets/imageData/image2.png"),
     price: 99.99,
     selected: false,
+    star: 3.9,
     description:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae, consequatur dolor sequi provident possimus sed ad qui ipsum similique odio iste molestias praesentium nemo ut facere, consectetur error in voluptate!",
   },
@@ -23,6 +25,7 @@ export const Data = [
     Photo: require("../assets/imageData/image3.png"),
     price: 99.99,
     selected: false,
+    star: 3.9,
     description:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae, consequatur dolor sequi provident possimus sed ad qui ipsum similique odio iste molestias praesentium nemo ut facere, consectetur error in voluptate!",
   },
@@ -32,6 +35,7 @@ export const Data = [
     Photo: require("../assets/imageData/image4.png"),
     price: 99.99,
     selected: false,
+    star: 3.9,
     description:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae, consequatur dolor sequi provident possimus sed ad qui ipsum similique odio iste molestias praesentium nemo ut facere, consectetur error in voluptate!",
   },
@@ -41,6 +45,7 @@ export const Data = [
     Photo: require("../assets/imageData/image5.png"),
     price: 99.99,
     selected: false,
+    star: 3.9,
     description:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae, consequatur dolor sequi provident possimus sed ad qui ipsum similique odio iste molestias praesentium nemo ut facere, consectetur error in voluptate!",
   },
@@ -50,6 +55,7 @@ export const Data = [
     Photo: require("../assets/imageData/image6.png"),
     price: 99.99,
     selected: false,
+    star: 3.9,
     description:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae, consequatur dolor sequi provident possimus sed ad qui ipsum similique odio iste molestias praesentium nemo ut facere, consectetur error in voluptate!",
   },
@@ -59,6 +65,7 @@ export const Data = [
     Photo: require("../assets/imageData/image7.png"),
     price: 99.99,
     selected: false,
+    star: 3.9,
     description:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae, consequatur dolor sequi provident possimus sed ad qui ipsum similique odio iste molestias praesentium nemo ut facere, consectetur error in voluptate!",
   },
@@ -68,15 +75,17 @@ export const Data = [
     Photo: require("../assets/imageData/image8.png"),
     price: 99.99,
     selected: false,
+    star: 3.9,
     description:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae, consequatur dolor sequi provident possimus sed ad qui ipsum similique odio iste molestias praesentium nemo ut facere, consectetur error in voluptate!",
   },
   {
     Id: "ea4e2621-798f-43a0-b6c9-bc36403f5f7e",
     Name: "Nike Air",
-    Photo: require("../assets/imageData/image9.png"),
+    Photo: require("../assets/imageData/image1.png"),
     price: 99.99,
     selected: false,
+    star: 3.9,
     description:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae, consequatur dolor sequi provident possimus sed ad qui ipsum similique odio iste molestias praesentium nemo ut facere, consectetur error in voluptate!",
   },
@@ -86,6 +95,7 @@ export const Data = [
     Photo: require("../assets/imageData/image10.png"),
     price: 99.99,
     selected: false,
+    star: 3.9,
     description:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae, consequatur dolor sequi provident possimus sed ad qui ipsum similique odio iste molestias praesentium nemo ut facere, consectetur error in voluptate!",
   },
