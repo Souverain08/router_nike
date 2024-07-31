@@ -13,10 +13,10 @@ const CustomShoes = ({ val }) => {
       <Text style={styles.title}>{val.Name}</Text>
       <View style={styles.star}>
         <Entypo name="star-outlined" size={26} color="#FECE00" />
-        <Text style={styles.title}>{val.star}</Text>
+        <Text style={styles.titleStar}>{val.star}</Text>
       </View>
       <View style={styles.price}>
-        <Text style={styles.title}>{val.price}</Text>
+        <Text style={styles.title}>{val.price}$</Text>
         <TouchableOpacity>
           <Ionicons name="add-circle-outline" size={26} color="#fff" />
         </TouchableOpacity>
@@ -29,7 +29,7 @@ export default CustomShoes;
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: "red",
+    backgroundColor: "#262627",
     padding: 5,
     marginHorizontal: 13,
     marginVertical: 10,
@@ -41,6 +41,12 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 20,
+    fontWeight: "500",
+    color: "#fff",
+    paddingHorizontal: 7,
+  },
+  titleStar: {
+    fontSize: 15,
     fontWeight: "500",
     color: "#fff",
     paddingHorizontal: 7,
