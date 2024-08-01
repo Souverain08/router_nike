@@ -1,9 +1,9 @@
 import { StyleSheet, Text, View } from "react-native";
 import React from "react";
 import { Entypo, Ionicons } from "@expo/vector-icons";
-import ImageSlider from "../components/imageSlider";
-import ListeShoes from "../components/listShoes";
-import { Data } from "../constents/Data";
+import ImageSlider from "../../components/imageSlider";
+import ListeShoes from "../../components/listShoes";
+import { Data } from "../../constents/Data";
 const Home = () => {
   return (
     <View style={styles.container}>
