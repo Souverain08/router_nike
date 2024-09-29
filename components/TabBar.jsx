@@ -23,8 +23,8 @@ const TabBar = ({ state, descriptors, navigation }) => {
     ),
   };
 
-  const primaryColor = "#FECE00";
-  const greyColor = "#737373";
+  const primaryColor = "#FFF";
+  const greyColor = "#FFF";
   return (
     <View style={styles.tabbar}>
       {state.routes.map((route, index) => {
@@ -62,7 +62,12 @@ const TabBar = ({ state, descriptors, navigation }) => {
         return (
           <TouchableOpacity
             key={route.name}
-            style={styles.tabbarItem}
+            style={{
+              ...styles.tabbarItem,
+              backgroundColor: isFocused ? "#359AFF" : null,
+              flexDirection: isFocused ? "row" : null,
+              paddingHorizontal: isFocused ? 10 : null,
+            }}
             accessibilityRole="button"
             accessibilityState={isFocused ? { selected: true } : {}}
             accessibilityLabel={options.tabBarAccessibilityLabel}
@@ -71,14 +76,16 @@ const TabBar = ({ state, descriptors, navigation }) => {
             onLongPress={onLongPress}
           >
             {icons[route.name]({ color: isFocused ? primaryColor : greyColor })}
-            <Text
-              style={{
-                color: isFocused ? primaryColor : greyColor,
-                fontSize: 11,
-              }}
-            >
-              {label}
-            </Text>
+            {isFocused ? (
+              <Text
+                style={{
+                  color: isFocused ? primaryColor : greyColor,
+                  fontSize: 13,
+                }}
+              >
+                {label}
+              </Text>
+            ) : null}
           </TouchableOpacity>
         );
       })}
@@ -88,25 +95,31 @@ const TabBar = ({ state, descriptors, navigation }) => {
 
 const styles = StyleSheet.create({
   tabbar: {
-    position: "absolute",
-    bottom: 25,
+    // position: "absolute",
+    // bottom: 25,
     flexDirection: "row",
-    justifyContent: "space-between",
+    // justifyContent: "space-between",
+    // justifyContent: "space-around",
     alignItems: "center",
+    justifyContent: "center",
     backgroundColor: "#040404",
-    marginHorizontal: 20,
-    paddingVertical: 15,
-    borderRadius: 25,
-    shadowColor: "black",
-    shadowOffset: { width: 0, height: 10 },
-    shadowRadius: 10,
-    shadowOpacity: 0.1,
+    // marginHorizontal: 20,
+    paddingVertical: 10,
+    // paddingHorizontal: 30,
+    // borderRadius: 25,
+    // shadowColor: "black",
+    // shadowOffset: { width: 0, height: 10 },
+    // shadowRadius: 10,
+    // shadowOpacity: 0.1,
   },
   tabbarItem: {
-    flex: 1,
+    // flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    gap: 4,
+    gap: 3,
+    borderRadius: 15,
+    marginHorizontal: 10,
+    paddingVertical: 8,
   },
 });
 

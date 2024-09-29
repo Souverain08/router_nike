@@ -1,1 +1,5 @@
 Je dois trouver le moyen de melanger le stack et tabs, en utilisant le route d'expo
+
+react-native-maps * MapView
+react-native-otp-textinput
+react-native-bottom-sheet

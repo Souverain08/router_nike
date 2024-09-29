@@ -1,22 +1,10 @@
-import { StyleSheet } from "react-native";
-import React from "react";
-import { Tabs } from "expo-router";
-import TabBar from "../components/TabBar";
+import { Stack } from "expo-router";
 
-const _layout = () => {
+export default function Layout() {
   return (
-    <Tabs
-      screenOptions={{ headerShown: false }}
-      tabBar={(props) => <TabBar {...props} />}
-    >
-      <Tabs.Screen name="index" options={{ title: "Home" }} />
-      <Tabs.Screen name="favori" options={{ title: "Favori" }} />
-      <Tabs.Screen name="cart" options={{ title: "Cart" }} />
-      <Tabs.Screen name="profil" options={{ title: "Profil" }} />
-    </Tabs>
+    <Stack screenOptions={{ headerShown: false }}>
+      {/* Optionally configure static options outside the route.*/}
+      <Stack.Screen name="index" options={{}} />
+    </Stack>
   );
-};
-
-export default _layout;
-
-const styles = StyleSheet.create({});
+}
