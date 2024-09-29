@@ -1,6 +1,6 @@
 import { StyleSheet, Text, View, TouchableOpacity } from "react-native";
 import React from "react";
-import { AntDesign, MaterialIcons, FontAwesome } from "@expo/vector-icons";
+import { AntDesign, FontAwesome, FontAwesome6 } from "@expo/vector-icons";
 
 const TabBar = ({ state, descriptors, navigation }) => {
   const icons = {
@@ -8,8 +8,8 @@ const TabBar = ({ state, descriptors, navigation }) => {
       <AntDesign name="home" size={26} color={greyColor} {...props} />
     ),
     favori: (props) => (
-      <MaterialIcons
-        name="favorite-border"
+      <FontAwesome6
+        name="map-location-dot"
         size={26}
         color={greyColor}
         {...props}
